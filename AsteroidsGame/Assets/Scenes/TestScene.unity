@@ -324,11 +324,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 548752470451020775, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
       propertyPath: shotCoolDown
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3368584262883406841, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
       propertyPath: shotCoolDown
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079104671869292192, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a43f8ee69227d04b82583683b61aa01, type: 3}
+    - target: {fileID: 5079104671869292192, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518243988120740558, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
+      propertyPath: shotCoolDown
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6792946244860668119, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
       propertyPath: m_LocalPosition.x
@@ -336,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6792946244860668119, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.02
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 6792946244860668119, guid: c90dd2bfbacb23b4cae5b4a040424710, type: 3}
       propertyPath: m_LocalPosition.z
@@ -386,4 +398,3 @@ SceneRoots:
   - {fileID: 1190204292}
   - {fileID: 1145711807226494428}
   - {fileID: 307619602}
-  - {fileID: 1874721716}
