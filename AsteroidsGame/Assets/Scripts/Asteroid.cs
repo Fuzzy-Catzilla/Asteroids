@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float speed = 1f;
+    [SerializeField] private float maxTorque = 10f;
+
+    public float torque = 0;
+    private Transform sprite;
+
+
+    private void Start()
     {
-        
+        sprite = transform.GetChild(0);
+        torque = Random.Range(-maxTorque, maxTorque);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.Translate(Vector2.up * speed * Time.deltaTime);
+        sprite.Rotate(Vector3.forward , torque * Time.deltaTime);
     }
 }
