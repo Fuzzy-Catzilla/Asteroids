@@ -31,15 +31,13 @@ public class Movement : MonoBehaviour
             if (speed < MAX_SPEED)
             {
                 speed += acceleration * Time.deltaTime;
-                Debug.Log(speed);
             }
         }
         else if (pDirection == -1)
         {
             if (speed > 0)
             {
-                speed -= acceleration * 2 * Time.deltaTime;
-                Debug.Log(speed);
+                speed -= Mathf.Clamp(acceleration * 2 * Time.deltaTime, 0, MAX_SPEED);
             }
         }
         float translation = speed * Time.deltaTime;
