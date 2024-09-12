@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private float speed = 2.0f;
+    [SerializeField] private float speed = 0.0f;
+
+    [SerializeField] private float acceleration = 8.0f ;
+
+    [SerializeField] private float torque = 15.0f;
     
-    static float MAX_SPEED = 10/1000f;
+    private float MAX_SPEED = 8.0f;
 
 
     
@@ -21,29 +25,36 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float translation = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
-        Debug.Log(translation);
+        float pDirection = Input.GetAxisRaw("Vertical");
+        if (pDirection == 1)
+        {
+            if (speed < MAX_SPEED)
+            {
+                speed += acceleration * Time.deltaTime;
+                Debug.Log(speed);
+            }
+        }
+        else if (pDirection == -1)
+        {
+            if (speed > 0)
+            {
+                speed -= acceleration * 2 * Time.deltaTime;
+                Debug.Log(speed);
+            }
+        }
+        float translation = speed * Time.deltaTime;
         transform.Translate(new Vector2(0,translation));
-    }
 
-    //General forward movement
-    void speedUp()
-    {
-        if (speed < MAX_SPEED)
-        {
+        //Rotate the ship here
+        float pOrientation = Input.GetAxisRaw("Horizontal");
+
         
-        speed++;
-        transform.Translate(new Vector2(0,speed));
-        }
+
+        
+        transform.Rotate(Vector3.back,torque * pOrientation * Time.deltaTime);
 
     }
-    void slowDown()
-    {
-        if (speed >= 0)
-        {
 
-            transform.Translate(new Vector2(0,speed));
-        }
-    }
+    
 
 }
