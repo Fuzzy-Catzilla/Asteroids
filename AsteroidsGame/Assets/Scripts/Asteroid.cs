@@ -4,22 +4,44 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    [SerializeField] private float speed = 1f;
+    [SerializeField] private int health = 1;
+    [SerializeField] private int damage = 1;
+    [SerializeField] private Vector2 speedRange = new (1f, 2f);
     [SerializeField] private float maxTorque = 10f;
 
-    public float torque = 0;
+    private CircleCollider2D cc;
     private Transform sprite;
+    private float speed = 0f;
+    private float torque = 0;
+    private float damageTaken = 0;
 
 
     private void Start()
-    {
+    { 
         sprite = transform.GetChild(0);
+        speed = Random.Range(speedRange.x, speedRange.y);
         torque = Random.Range(-maxTorque, maxTorque);
     }
 
     private void Update()
     {
+        AsteroidMovement();
+    }
+
+    private void AsteroidMovement()
+    {
         transform.Translate(Vector2.up * speed * Time.deltaTime);
-        sprite.Rotate(Vector3.forward , torque * Time.deltaTime);
+        sprite.Rotate(Vector3.forward, torque * Time.deltaTime);
+    }
+
+    private void RecieveDamage(float damage)
+    {
+        damageTaken += damage;
+        if (damageTaken >= health)
+        {
+            //spawn asteroid bits
+            //sounds
+            Destroy(gameObject);
+        }
     }
 }
