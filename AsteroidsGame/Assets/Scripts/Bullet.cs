@@ -33,12 +33,11 @@ public class Bullet : MonoBehaviour
         
 
     }
-    private void OnCollisionEnter2D (Collision2D collision)
+    private void OnTriggerEnter2D (Collider2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Asteroid asteroid))
         {
             asteroid.RecieveDamage(1);
-            Debug.Log("hit");
             Destroy(gameObject);
             
         }
