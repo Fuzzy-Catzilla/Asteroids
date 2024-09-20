@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -30,6 +31,17 @@ public class Bullet : MonoBehaviour
         else Destroy(gameObject);
 
         
+
+    }
+    private void OnCollisionEnter2D (Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out Asteroid asteroid))
+        {
+            asteroid.RecieveDamage(1);
+            Debug.Log("hit");
+            Destroy(gameObject);
+            
+        }
 
     }
 }

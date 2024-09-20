@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    [SerializeField] private int health = 1;
+    [SerializeField] private int health = 6;
     [SerializeField] private int damage = 1;
     [SerializeField] private Vector2 speedRange = new (1f, 2f);
     [SerializeField] private float maxTorque = 10f;
@@ -34,9 +34,10 @@ public class Asteroid : MonoBehaviour
         sprite.Rotate(Vector3.forward, torque * Time.deltaTime);
     }
 
-    private void RecieveDamage(float damage)
+    public void RecieveDamage(float damage)
     {
         damageTaken += damage;
+        Debug.Log(damageTaken);
         if (damageTaken >= health)
         {
             //spawn asteroid bits
