@@ -42,6 +42,7 @@ public class Asteroid : MonoBehaviour
         damageTaken += damage;
         sparks.Play();
         Debug.Log(damageTaken);
+        transform.localScale -= (Vector3.one * 0.05f);
         if (damageTaken >= health)
         {
             //spawn asteroid bits
