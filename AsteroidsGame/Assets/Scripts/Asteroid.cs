@@ -5,24 +5,27 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     [SerializeField] private int health = 6;
-    [SerializeField] private int damage = 1;
     [SerializeField] private Vector2 speedRange = new (1f, 2f);
     [SerializeField] private float maxTorque = 10f;
 
+    public int damage = 1;
+
     private CircleCollider2D cc;
     private Transform sprite;
+    private ParticleSystem sparks;
     private float speed = 0f;
     private float torque = 0;
+
     private float damageTaken = 0;
-    private ParticleSystem sparks;
 
 
     private void Start()
     { 
+        cc = GetComponent<CircleCollider2D>();
         sprite = transform.GetChild(0);
+        sparks = GetComponentInChildren<ParticleSystem>();
         speed = Random.Range(speedRange.x, speedRange.y);
         torque = Random.Range(-maxTorque, maxTorque);
-        sparks = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Update()
@@ -39,15 +42,20 @@ public class Asteroid : MonoBehaviour
 
     public void RecieveDamage(float damage)
     {
-        damageTaken += damage;
-        sparks.Play();
-        Debug.Log(damageTaken);
-        transform.localScale -= (Vector3.one * 0.05f);
+        if (damageTaken < health)
+        {
+            damageTaken += damage;
+            sparks.Play();
+            transform.localScale -= (Vector3.one * 0.05f);
+        }
         if (damageTaken >= health)
         {
             //spawn asteroid bits
             //sounds
-            Destroy(gameObject);
+            sparks.Play();
+            cc.enabled = false;
+            sprite.gameObject.SetActive(false);
+            Destroy(gameObject, sparks.main.duration);
         }
     }
 }
