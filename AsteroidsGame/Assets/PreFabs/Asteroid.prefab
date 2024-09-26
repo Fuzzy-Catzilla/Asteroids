@@ -151,9 +151,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 4
-  damage: 1
-  speedRange: {x: 0, y: 0}
+  speedRange: {x: 2, y: 4}
   maxTorque: 50
+  autoClean: 20
+  damage: 1
 --- !u!58 &3125620180019352952
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class Asteroid : MonoBehaviour
     [SerializeField] private int health = 6;
     [SerializeField] private Vector2 speedRange = new (1f, 2f);
     [SerializeField] private float maxTorque = 10f;
+    [SerializeField] private float autoClean = 15f;
 
     public int damage = 1;
 
@@ -26,12 +27,13 @@ public class Asteroid : MonoBehaviour
         sparks = GetComponentInChildren<ParticleSystem>();
         speed = Random.Range(speedRange.x, speedRange.y);
         torque = Random.Range(-maxTorque, maxTorque);
+
+        Destroy(gameObject, autoClean);
     }
 
     private void Update()
     {
         AsteroidMovement();
-        
     }
 
     private void AsteroidMovement()
