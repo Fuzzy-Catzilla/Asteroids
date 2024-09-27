@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7537646432814172861}
   - component: {fileID: 5521046213502694770}
-  - component: {fileID: 4050809671569480886}
+  - component: {fileID: 3434476874349120503}
   m_Layer: 5
   m_Name: Heart2
   m_TagString: Untagged
@@ -45,7 +45,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736216517710867429}
   m_CullTransparentMesh: 1
---- !u!114 &4050809671569480886
+--- !u!114 &3434476874349120503
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1736216517710867429}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -65,13 +65,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 528b8d26e6b036c439d138ceb721bdab, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 21300000, guid: 528b8d26e6b036c439d138ceb721bdab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2245078123981018202
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3042599965622484305}
   - component: {fileID: 4578386991145328729}
-  - component: {fileID: 7692254431032162586}
+  - component: {fileID: 6872324933707506892}
   m_Layer: 5
   m_Name: Heart3
   m_TagString: Untagged
@@ -117,7 +120,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2245078123981018202}
   m_CullTransparentMesh: 1
---- !u!114 &7692254431032162586
+--- !u!114 &6872324933707506892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,7 +129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2245078123981018202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -137,13 +140,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9924518aa9355f4498ee29884da3f701, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 21300000, guid: 9924518aa9355f4498ee29884da3f701, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2411305816543375298
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2759074658766294642}
   - component: {fileID: 2630179130454472214}
-  - component: {fileID: 3008908546066529973}
+  - component: {fileID: 1289344364297034543}
   m_Layer: 5
   m_Name: Heart4
   m_TagString: Untagged
@@ -189,7 +195,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2411305816543375298}
   m_CullTransparentMesh: 1
---- !u!114 &3008908546066529973
+--- !u!114 &1289344364297034543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,7 +204,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2411305816543375298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -209,13 +215,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 528b8d26e6b036c439d138ceb721bdab, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 21300000, guid: 528b8d26e6b036c439d138ceb721bdab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4695935739985869523
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4892329469945385292}
   - component: {fileID: 4444251253795881589}
-  - component: {fileID: 1208643103768336986}
+  - component: {fileID: 7112747435656585053}
   m_Layer: 5
   m_Name: Heart1
   m_TagString: Untagged
@@ -347,7 +356,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413397306379503225}
   m_CullTransparentMesh: 1
---- !u!114 &1208643103768336986
+--- !u!114 &7112747435656585053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,7 +365,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5413397306379503225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -367,13 +376,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9924518aa9355f4498ee29884da3f701, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 21300000, guid: 9924518aa9355f4498ee29884da3f701, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &6910637211767049410
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3876999215223325988}
   - component: {fileID: 6539746738889674756}
-  - component: {fileID: 6300205497877450665}
+  - component: {fileID: 6236928588815381590}
   m_Layer: 5
   m_Name: Heart5
   m_TagString: Untagged
@@ -419,7 +431,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6910637211767049410}
   m_CullTransparentMesh: 1
---- !u!114 &6300205497877450665
+--- !u!114 &6236928588815381590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,7 +440,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6910637211767049410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -439,13 +451,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9924518aa9355f4498ee29884da3f701, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 21300000, guid: 9924518aa9355f4498ee29884da3f701, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7831487608615402525
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1132620874094410103}
   - component: {fileID: 3850289410652467061}
-  - component: {fileID: 928114043370757988}
+  - component: {fileID: 5213693269326598620}
   m_Layer: 5
   m_Name: Heart6
   m_TagString: Untagged
@@ -491,7 +506,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7831487608615402525}
   m_CullTransparentMesh: 1
---- !u!114 &928114043370757988
+--- !u!114 &5213693269326598620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -500,7 +515,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7831487608615402525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -511,10 +526,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 528b8d26e6b036c439d138ceb721bdab, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 21300000, guid: 528b8d26e6b036c439d138ceb721bdab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
