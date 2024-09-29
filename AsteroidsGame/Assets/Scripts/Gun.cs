@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour
         Ship = GetComponentInParent<Transform>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         
         if (Input.GetKey(KeyCode.Space) && coolDownDelta <= 0)
