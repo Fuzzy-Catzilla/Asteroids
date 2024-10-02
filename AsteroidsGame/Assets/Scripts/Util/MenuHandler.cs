@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class MenuHandler : MonoBehaviour
 {
     [SerializeField] private List<GameObject> menus = new();
 
+    private AudioSource bgMusic;
     private int menuOpen = -1;
+    private float volume;
 
+
+    private void Awake()
+    {
+        bgMusic = GetComponent<AudioSource>();
+        volume = bgMusic.volume;
+    }
 
     private void Update()
     {
@@ -39,7 +45,8 @@ public class MenuHandler : MonoBehaviour
             menus[menuNum].SetActive(true);
             menuOpen = menuNum;
             TogglePause(true);
-            //Start Menu music
+            bgMusic.spatialBlend = 0.75f;
+            //play menu music
         }
     }
 
@@ -48,6 +55,7 @@ public class MenuHandler : MonoBehaviour
         menuOpen = -1;
         foreach (var menu in menus) menu.SetActive(false);
         TogglePause(false);
+        bgMusic.spatialBlend = 0f;
         //Stop menu music
         //Close menu sound
     }
